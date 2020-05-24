@@ -9,8 +9,8 @@ import (
 )
 
 // Run runs the engine
-func Run(r *mux.Router, port string) {
-	mgr := NewShortURLManager(nil)
+func Run(cfg *corto.Config, r *mux.Router, port string) {
+	mgr := NewShortURLManager(cfg)
 	createManagerServiceEngine(r, mgr)
 	createFetchShortURLServiceEnginer(r, mgr)
 
