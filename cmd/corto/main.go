@@ -10,6 +10,7 @@ import (
 
 func main() {
 	log.Printf("welcome to corto short url service")
+	log.Printf("Added as part of Language Server")
 	cfg := &co.Config{
 		DBLoc: "",
 	}
